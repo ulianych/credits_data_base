@@ -93,6 +93,12 @@ This database can be used for:
 
 ---
 
+## Author
+Ihnatchyk Ulyana Sergeevna
+3 course, 11 group
+2024
+
+---
 ## Example Queries
 
 1. **Retrieve all active credits for a specific legal entity:**
