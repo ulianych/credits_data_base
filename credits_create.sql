@@ -47,7 +47,7 @@ VALUES
 (4455, 19000, 10, '2021-11-19', 18, 'EUR', 0);
 
 CREATE TABLE FINE (
-    ID int PRIMARY KEY NOT NULL,
+    ID int PRIMARY KEY NOT NULL IDENTITY,
     CREDITID int,
     FINE_DATE date,
     FINE_SUM money,
@@ -56,9 +56,9 @@ CREATE TABLE FINE (
     FOREIGN KEY (CREDITID) REFERENCES CREDIT(CREDITID)
 );
 
-INSERT INTO FINE (ID, CREDITID, FINE_DATE, FINE_SUM, PAID, PAYMENT_METHOD) VALUES
-(1, 3, '2023-04-15', 120, 1, 'cash'),
-(2, 4, '2024-09-22', 80, 0, 'cash'),
-(3, 3, '2023-05-15', 50, 1, 'card'),
-(4, 5, '2024-10-14', 100, 0, 'transfer'),
-(5, 7, '2024-10-14', 200, 0, 'card');
+INSERT INTO FINE (CREDITID, FINE_DATE, FINE_SUM, PAID, PAYMENT_METHOD) VALUES
+(3, '2023-04-15', 120, 1, 'cash'),
+(4, '2024-09-22', 80, 0, 'cash'),
+(3, '2023-05-15', 50, 1, 'card'),
+(5, '2024-10-14', 100, 0, 'transfer'),
+(7, '2024-10-14', 200, 0, 'card');
