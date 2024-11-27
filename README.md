@@ -2,6 +2,8 @@
 
 This project contains a relational database designed for managing information about legal entities, their credits, and fines. The database consists of three main tables: `UL` (Legal Entities), `CREDIT` (Credits), and `FINE` (Fines). Below is a detailed description of each table and its purpose.
 
+The database was implemented using **Microsoft SQL Server**.
+
 ---
 
 ## Tables
